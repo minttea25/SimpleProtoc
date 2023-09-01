@@ -154,29 +154,5 @@ namespace SimpleProtoc
 
             return new Tuple<bool, string, string, string>(true, c.ToString(), info.ToString(), protocPath);
         }
-
-        public static ProtocArgs GetDefault()
-        {
-            return new ProtocArgs
-            {
-                PROTOC_PATH = "",
-                IMPORT_PATH = new List<string>(),
-                FILES = new List<string>(),
-                TARGET_DIR = "",
-                COMMON_OUTPUT_PATH = "",
-                LANGS = new Dictionary<string, bool>()
-                {
-                    { "cpp", false },
-                    { "java", false },
-                    { "python", false },
-                    { "ruby", false },
-                    { "objc", false },
-                    { "csharp", false },
-                    { "kotlin", false },
-                    { "php", false },
-                    { "pyi", false },
-                },
-            };
-        }
     }
 }
