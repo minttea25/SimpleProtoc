@@ -14,7 +14,7 @@ Google Proto Buffer에서 프로토 메시지를 생성하는 프로그램(proto
 protoc에 대한 실행 인자 값을 지정하는 설정 파일입니다.
 ### Fields
 * PROTOC_PATH: 클래스 생성하는 실행파일의 경로 (빈 칸일시에 default적용), Default: `protoc.exe`
-* IMPORT_PATH: proto파일을 탐색할 디렉터리 경로, Default: `current directory`
+* IMPORT_PATH: proto파일을 탐색할 디렉터리 경로, Default: `present directory`
 * FILES: 클래스를 생성할 proto 파일들(list), TARGET_DIR 값이 존재하면 무시되고 1개 이상 반드시 지정 필요
 * TARGET_DIR: 클래스를 생성할 proto 파일들이 있는 디렉터리 경로, 해당 디렉터리에 존재하는 모든 proto 파일들을 생성
 * COMMON_OUTPUT_PATH: 생성된 파일들이 위치할 공통 디렉터리 경로, 언어에 특정 경로를 지정하지 않으면 이 값을 사용, Default: `current directory`
@@ -52,5 +52,4 @@ pause
 
 ## Google Protobuf Page
 [Google Protocol Buffers Documentation](https://protobuf.dev/)
-
 
